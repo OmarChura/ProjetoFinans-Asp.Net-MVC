@@ -1,0 +1,37 @@
+﻿@model UsuarioViewModel
+
+<div id="logo" class="navbar-dark navbar-brand">
+    <h1><a class="navbar" asp-area="" asp-controller="Home" asp-action="Index">Finanças Pessoais</a></h1>
+</div>
+
+<!-- Menu Hamburguer -->
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon text-dark"></span>
+</button>
+
+<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between" id="nav-principal">
+    <ul class="navbar-nav flex-grow-1">
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Finans</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="OrcamentoPessoal" asp-action="Index">Orçamento Pessoal</a>
+        </li>
+        @if (Model.Perfil == DevOC.Business.Enums.TiposUsuarios.Admin)
+        {
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
+            </li>
+        }
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="AlterarSenha" asp-action="Index">Alterar Senha</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Contato" asp-action="Index">Contato</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Sair"><button>Sair</button></a>
+        </li>
+    </ul>
+</div>

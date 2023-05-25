@@ -1,0 +1,118 @@
+﻿@model DevOC.App.ViewModels.OrcamentoPessoalViewModel
+
+
+@{
+    ViewData["Title"] = "Novo Orcamento";
+}
+
+<!-- inicio seção home -->
+<section class="section-topo pt-4">
+    <div class="container">
+        <div class="section-topo-left ">
+            <h1 class="display-4">Registro de nova Despesa</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque hendrerit lacus sit amet aliquet. Cras non venenatis purus.
+            </p>
+
+            <div class="cadastrar-consultar">
+                <button><a asp-controller="OrcamentoPessoal" asp-action="Create">Cadastro</a></button>
+                <button><a asp-controller="OrcamentoPessoal" asp-action="Index">Consulta</a></button>
+            </div>
+        </div>
+
+        <div class="capa-mulher">
+            <img src="/imagens/capa-mulher.png" alt="" srcset="">
+        </div>
+        <div class="clear"></div>
+    </div>
+</section>
+<!-- fim seção home -->
+<!-- inicio seção formulario cadastrar -->
+<section class="caixa">
+    <div class="container">
+        <div class="col-md-4">
+            <form asp-action="Create" method="post" class="area-cadastrar-orcamento">
+
+                <vc:summary></vc:summary>
+
+                <div class="form-group">
+                    <label asp-for="UsuarioId" class="control-label"></label>
+                    <select asp-for="UsuarioId" class="form-control" asp-items="@(new SelectList(Model.Usuarios,"Id","Nome"))">
+                        <option>Usuário</option>
+                    </select>
+                    <span asp-validation-for="UsuarioId" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Ano" class="control-label"></label>
+                    <input asp-for="Ano" class="form-control" type="text" id="years" placeholder="Digite o ano da despesa" />
+                    <span asp-validation-for="Ano" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Mes" class="control-label"></label>
+                    <select asp-for="Mes" class="form-control" id="Mes">
+                        <option >Mês</option>
+                        <option value="1">Janeiro</option>
+                        <option value="2">Fevereiro</option>
+                        <option value="3">Março</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Maio</option>
+                        <option value="6">Junho</option>
+                        <option value="7">Julho</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Setembro</option>
+                        <option value="10">Outubro</option>
+                        <option value="11">Novembro</option>
+                        <option value="12">Dezembro</option>
+                    </select>
+                    <span asp-validation-for="Mes" class="text-danger"></span>
+                </div>
+                
+                <div class="form-group mb-3">
+                    <label asp-for="Dia" class="control-label"></label>
+                    <input asp-for="Dia" type="number" id="dia" class="form-control" />
+                    <span asp-validation-for="Dia" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="TipoDespesa" class="control-label"></label>
+                    <select asp-for="TipoDespesa" class="form-control tipo" id="tipo" class="tipo">
+                        <option value="">Tipo Despesa</option>
+                        <option value="1">Alimentação</option>
+                        <option value="2">Educação</option>
+                        <option value="3">Lazer</option>
+                        <option value="4">Saúde</option>
+                        <option value="5">Transporte</option>
+                    </select>
+                    <span asp-validation-for="TipoDespesa" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Descricao" class="control-label"></label>
+                    <textarea asp-for="Descricao" cols="40" rows="5" id="descricao" class="form-control" ></textarea>
+                    <span asp-validation-for="Descricao" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Valor" class="control-label"></label>
+                    <input asp-for="Valor" id="valor" class="form-control" />
+                    <span asp-validation-for="Valor" class="text-danger"></span>
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="Ativo" /> @Html.DisplayNameFor(model => model.Ativo)
+                    </label>
+                </div>
+                <br />
+                <div class="form-group">
+                    <input type="submit" value="Cadastrar" class="btn btn-primary" />
+                    <a class="btn btn-info" asp-action="Index">Voltar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- fim seção formulario cadastrar -->
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    
+}

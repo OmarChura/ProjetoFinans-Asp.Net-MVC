@@ -1,0 +1,92 @@
+﻿<!--jquery datatable https://datatables.net/ , site para paginação-->
+@using DevOC.App.Extensions
+@model DevOC.App.ViewModels.UsuarioViewModel
+
+@{
+    ViewData["Title"] = "Excluir Usuario";
+}
+
+<!-- inicio seção home -->
+<section class="section-topo pt-4">
+    <div class="container">
+        <div class="section-topo-left ">
+            <h1 class="display-4">Excluir usúario</h1>
+            <p>
+                Esta ação será permanente!
+            </p>
+
+            <div class="cadastrar-consultar">
+                <button><a asp-action="Create">Cadastro</a></button>
+                <button><a asp-action="Index">Consulta</a></button>
+            </div>
+        </div>
+
+        <div class="capa-mulher">
+            <img src="imagens/capa-mulher.png" alt="" srcset="">
+        </div>
+        <div class="clear"></div>
+    </div>
+</section>
+<!-- fim seção home -->
+
+<div class="text-center container">
+   
+    <br />
+
+    <h1 class="display-4">@ViewData["Title"] - Ação Permanente!</h1>
+
+    <hr />
+    <dl>
+        <dt class ="col-sm-2">
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Login)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Login)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Celular)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Celular)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Perfil)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Perfil)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DateCadastro)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DateCadastro)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DataAtualizacao)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DataAtualizacao)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" class="btn btn-danger" value="Excluir" />
+        <a class="btn btn-info" href="javascript:window.history.back();">Voltar</a>
+    </form>
+    
+</div>
+
+<partial name="_DetalhesEndereco" />

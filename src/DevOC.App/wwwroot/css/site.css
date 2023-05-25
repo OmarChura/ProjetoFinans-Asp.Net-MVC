@@ -1,0 +1,537 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.field-validation-error {
+    color: #e01d1d;
+}
+
+.close-alert {
+    position: absolute;
+    right: -10px;
+    top: -15px;
+    border-radius: 15px;
+    width: 30px;
+    height: 31px;
+}
+/*******************************
+Estrutura do site */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    background: #fff;
+}
+
+.container {
+    min-width: 720px;
+    max-width: 1280px;
+    margin: auto;
+}
+
+a:link, a:active, a:visited {
+    color: #af670a;
+    text-decoration: none;
+}
+/*
+a:hover {
+    color: #643a06;
+}*/
+
+.caixa {
+    padding: 60px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+/* Logo 
+------------------------------------------------------------------------------------------------*/
+
+header {
+    background: #ffc107;
+    padding: 15px 0;
+    height: 55px;
+}
+
+#logo h1 {
+    float: left;
+}
+
+#logo a {
+    width: 300px;
+    height: 70px;
+    text-indent: -999px;
+    display: block;
+    background: url(../imagens/logo.png) no-repeat;
+}
+
+/* Barra de navegação
+------------------------------------------------------------------------------------------------*/
+
+nav ul {
+    list-style: none;
+    margin: 30px;
+    float: right;
+}
+
+.navegacao-fixo {
+    background: #ffc107;
+}
+
+    nav ul li {
+        float: left;
+    }
+    
+nav ul li a {
+    display: block;
+    margin-right: 25px;
+}
+
+header nav button {
+    margin-top: -20px;
+    font-size: 0.9em;
+    color: #fff;
+    background: transparent;
+    width: 70px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+header nav button:hover {
+    color: #643a06;
+    background: #fff;
+}
+
+/* secao topo
+------------------------------------------------------------------------------------------------*/
+
+.section-topo {
+    background: #ffc107;
+    color: #fff;
+}
+
+.section-topo-left {
+    width: 650px;
+    float: left;
+    margin: 100px 0px;
+}
+
+.capa-mulher {
+    
+    margin-bottom: px;
+}
+
+.section-topo-left p {
+    padding: 10px;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.disponivel-icones button {
+    color: #fff;
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+    .disponivel-icones button:hover {
+        color: #000;
+        background: #fff;
+    }
+
+.display-4 {
+    margin-left: 5px;
+    font-family: inherit;
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.section-topo-left input {
+    height: 31px;
+    width: 60%;
+    margin-left: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding-left: 10px;
+    border: none;
+    background-repeat: no-repeat;
+}
+
+.section-topo-left form button {
+    display: inline-block;
+    margin-left: -7px;
+    margin-top: 20px;
+    background-color: #007bff;
+    height: 30px;
+    width: 20%;
+    border: 3px solid #007bff;
+    border-radius: 0 5px 5px 0;
+}
+
+    .section-topo-left form button a {
+        color: #fff;
+    }
+
+.clear {
+    clear: both;
+}
+
+/* principal
+------------------------------------------------------------------------------------------------*/
+
+
+
+.section-saiba-text {
+    padding-top: 100px;
+    padding-left: 0px;
+    float: left;
+    width: 40%;
+}
+
+.caixa a {
+    color: #fff;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.caixa p {
+    padding: 10px 0;
+}
+
+.section-saiba-img {
+    float: right;
+    padding-right: 90px;
+}
+
+    .section-saiba-img img {
+        width: 550px;
+    }
+
+.section-juros-text {
+    padding-top: 250px;
+    padding-right: 90px;
+    float: right;
+    width: 40%;
+}
+
+.section-juros-img {
+    float: left;
+}
+
+    .section-juros-img img {
+        width: 450px;
+    }
+
+.section-last {
+    float: left;
+    width: 31%;
+}
+
+.section-tempo {
+    margin: 0 35px;
+}
+
+.section-last img {
+    width: 350px;
+}
+
+/* footer
+------------------------------------------------------------------------------------------------*/
+.navegacao-footer ul {
+    float: left;
+}
+
+    .navegacao-footer ul li a:hover {
+        border-bottom: 1px solid #535858;
+    }
+
+footer {
+    padding: 20px;
+}
+
+    footer ul {
+        list-style: none;
+        margin: 20px;
+    }
+
+        footer ul li {
+            float: left;
+        }
+
+            footer ul li a {
+                display: block;
+                margin-right: 25px;
+            }
+
+.navegacao-icones ul {
+    float: right;
+    padding-right: 130px;
+}
+
+.navegacao-icones button {
+    color: #000;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+    .navegacao-icones button:hover {
+        color: #fff;
+        background: #000;
+    }
+
+
+/* Entrar
+------------------------------------------------------------------------------------------------*/
+.container-entrar {
+    width: 400px;
+    height: 400px;
+    margin: 30px auto;
+    border: 1px solid red;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container-entrar input {
+    height: 40px;
+    width: 80%;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    padding-left: 20px;
+    border: 1px solid #ffc107;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+.container-entrar img {
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+}
+
+.container-entrar input.submit {
+    color: #fff;
+    background-color: #ffc107;
+    padding: 5px 10px;
+    height: 45px;
+    width: 85%;
+    background: -webkit-linear-gradient(to bottom, #ffc107, #f68a00);
+    background: -moz-linear-gradient(to bottom, #ffc107, #f68a00);
+    background: -o-linear-gradient(to bottom, #ffc107, #f68a00);
+    background: linear-gradient(to bottom, #ffc107, #f68a00);
+}
+
+/* contato
+------------------------------------------------------------------------------------------------*/
+
+.contato-topo h1 {
+    padding-left: 10px;
+}
+
+.area-mapa {
+    float: left;
+    width: 600px;
+    
+}
+
+.area-mensagem {
+    float: right;
+    width: 500px;
+    height: 451px;
+    margin: auto;
+    padding-left: 40px;
+    border: 1px solid #ffc107;
+    border-radius: 5px;
+}
+
+    .area-mensagem label {
+        font-size: 1.2em;
+        padding-left: 20px;
+    }
+
+    .area-mensagem textarea {
+        margin-left: 20px;
+        border: 1px solid #ffc107;
+    }
+
+    .area-mensagem input {
+        height: 40px;
+        width: 80%;
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        background-color: #fff;
+        padding-left: 10px;
+        border: 1px solid #ffc107;
+        border-radius: 5px;
+    }
+
+
+/* Cadastre-se
+------------------------------------------------------------------------------------------------*/
+
+.area-cadastrar {
+    max-width: 1000px;
+    min-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.area-cadastrar input {
+    height: 40px;
+    width: 97%;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ffc107;
+    border-radius: 5px;
+    padding-left: 4px;
+}
+
+.area-cadastrar .ocupa-metade {
+    width: 48%;
+}
+
+.area-cadastrar label.genero {
+    display: inline-block;
+    font-size: 1em;
+}
+
+.area-cadastrar input.genero {
+    display: inline-block;
+    font-size: 1em;
+    width: 20px;
+}
+
+.area-cadastrar .cep {
+    float: left;
+    margin-left: 5px;
+}
+
+.area-cadastrar .genero-estado {
+    height: 42px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ffc107;
+    border-radius: 5px;
+}
+
+.area-cadastrar .area-75 {
+    width: 75%;
+}
+
+.area-cadastrar .largura-20 {
+    width: 22%;
+}
+
+.area-cadastrar .bairro {
+    width: 59%;
+}
+
+.area-cadastrar .complemento {
+    width: 38%;
+}
+
+
+
+.area-cadastrar legend.genero {
+    display: inline-block;
+    font-size: 1em;
+}
+
+
+.area-cadastrar input.submit {
+    background-color: #ffc107;
+    height: 38px;
+    width: 90px;
+    margin: auto;
+    border: 3px solid #ffc107;
+    border-radius: 5px;
+}
+
+/* orçamento pessoal cadastrar
+------------------------------------------------------------------------------------------------*/
+.section-topo-left .cadastrar-consultar button {
+    display: inline-block;
+    margin-top: 3px;
+    margin-left: 10px;
+    background-color: #007bff;
+    height: 31px;
+    width: 20%;
+    border: 3px solid #007bff;
+    border-radius: 5px;
+}
+
+.section-topo-left .cadastrar-consultar button a {
+    color: #fff;
+}
+
+
+   
+
+    /* orçamento pessoal consultar
+------------------------------------------------------------------------------------------------*/
+
+    .area-cadastrar-orcamento table {
+        width: 100%;
+        margin: 0 auto;
+        border-collapse: collapse;
+    }
+
+
+    .area-cadastrar-orcamento th {
+        font-size: 1.5em;
+    }
+
+    .area-cadastrar-orcamento th, .area-cadastrar-orcamento td {
+        padding: 7px;
+        height: 40px;
+        border-top: 1px solid #ffc107;
+    }
+
+
+
+    .area-cadastrar-orcamento tr:hover {
+        background-color: #d3a20e;
+        color: #fff;
+    }
+
+    .area-cadastrar-orcamento button {
+        color: #fff;
+        background: rgb(224, 39, 39);
+        width: 40px;
+        height: 40px;
+        font-size: 1.5em;
+        border: 4px solid rgb(224, 39, 39);
+        border-radius: 5px;
+    }

@@ -1,0 +1,103 @@
+﻿@model DevOC.App.ViewModels.UsuarioViewModel
+
+
+@{
+    ViewData["Title"] = "Editar Usuario";
+}
+
+<!-- inicio seção home -->
+<section class="section-topo pt-4">
+    <div class="container">
+        <div class="section-topo-left ">
+            <h1 class="display-4">Editar Usúarioa</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque hendrerit lacus sit amet aliquet. Cras non venenatis purus.
+            </p>
+
+            <div class="cadastrar-consultar">
+                <button><a asp-controller="Usuarios" asp-action="Create">Cadastro</a></button>
+                <button><a asp-controller="Usuarios" asp-action="Index">Consulta</a></button>
+            </div>
+        </div>
+
+        <div class="capa-mulher">
+            <img src="/imagens/capa-mulher.png" alt="" srcset="">
+        </div>
+        <div class="clear"></div>
+    </div>
+</section>
+<!-- fim seção home -->
+<!-- inicio seção formulario cadastrar -->
+<section class="caixa">
+    <div class="container">
+        <div class="col-md-4">
+            <form asp-action="Edit" method="post">
+
+                <vc:summary></vc:summary>
+                <input type="hidden" asp-for="Id" />
+
+                <div class="form-group mb-3">
+                    <label asp-for="Nome" class="control-label"></label>
+                    <input asp-for="Nome" class="form-control" type="text"  />
+                    <span asp-validation-for="Nome" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Login" class="control-label"></label>
+                    <input asp-for="Login" type="text" class="form-control" />
+                    <span asp-validation-for="Login" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" type="text" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Celular" class="control-label"></label>
+                    <input asp-for="Celular" type="text" class="form-control" />
+                    <span asp-validation-for="Celular" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Perfil" class="control-label"></label> <br />
+                    <input type="radio" value="@DevOC.Business.Enums.TiposUsuarios.Admin" asp-for="Perfil" checked="@(Model.Perfil == DevOC.Business.Enums.TiposUsuarios.Admin)" /> Administrador <br />
+                    <input type="radio" value="@DevOC.Business.Enums.TiposUsuarios.Padrao" asp-for="Perfil" checked="@(Model.Perfil == DevOC.Business.Enums.TiposUsuarios.Padrao)" /> Padrão <br />
+                </div>
+
+
+                <div class="form-group">
+                    <input type="submit" value="Salvar" class="btn btn-primary" />
+                    <a class="btn btn-info" asp-action="Index">Voltar</a>
+                </div>
+            </form>
+
+            <div id="EnderecoTarget">
+                <partial name="_DetalhesEndereco" />
+            </div>
+
+            <hr />
+            <h4>Orçamentos</h4>
+            <div>
+                <partial name="../OrcamentoPessoal/_ListaOrcamento" model="@Model.Orcamentos" />
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div id="myModal" class="modal fade in">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div id="myModalContent"></div>
+        </div>
+    </div>
+</div>
+<!-- fim seção formulario cadastrar -->
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        $(document).ready(function () {
+            SetModal();
+        });
+    </script>
+}

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<DevOC.App.ViewModels.OrcamentoPessoalViewModel>
+
+<table class="table" id="table-contatos">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Data</th>
+            <th scope="col">Usuario</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Descriçao</th>
+            <th scope="col">Valor</th>
+            <th scope="col">Ativo</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (OrcamentoPessoalViewModel orcamento in Model)
+            {
+                <tr>
+                    <th scope="row">@orcamento.Dia/@orcamento.Mes/@orcamento.Ano</th>
+                    <td>@orcamento.Usuario.Nome</td>
+                    <td>@orcamento.TipoDespesa</td>
+                    <td>@orcamento.Descricao</td>
+                    <td>@orcamento.Valor.ToString("C")</td>
+                    <td>@orcamento.Ativo</td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <a role="button" class="btn btn-info" asp-route-id="@orcamento.Id" asp-controller="OrcamentoPessoal" asp-action="Details"><spam class="fa fa-search"></spam></a>
+                            <a role="button" class="btn btn-primary" asp-route-id="@orcamento.Id" asp-controller="OrcamentoPessoal" asp-action="Edit"><spam class="fa fa-pencil-alt"></spam></a>
+                            <a role="button" class="btn btn-danger" asp-route-id="@orcamento.Id" asp-controller="OrcamentoPessoal" asp-action="Delete"><spam class="fa fa-trash"></spam></a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr class="add">
+                <td valign="top" colspan="5">Nenhum Contato Encontrado</td>
+            </tr>
+        }
+
+    </tbody>
+</table>

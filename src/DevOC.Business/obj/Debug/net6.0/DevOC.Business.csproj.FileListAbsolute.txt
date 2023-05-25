@@ -1,0 +1,14 @@
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Business\bin\Debug\net6.0\DevOC.Business.deps.json
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Business\bin\Debug\net6.0\DevOC.Business.dll
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Business\bin\Debug\net6.0\DevOC.Business.pdb
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Business\obj\Debug\net6.0\DevOC.Business.csproj.AssemblyReference.cache
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Business\obj\Debug\net6.0\DevOC.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Business\obj\Debug\net6.0\DevOC.Business.AssemblyInfoInputs.cache
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Business\obj\Debug\net6.0\DevOC.Business.AssemblyInfo.cs
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Business\obj\Debug\net6.0\DevOC.Business.csproj.CoreCompileInputs.cache
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Business\obj\Debug\net6.0\DevOC.Business.dll
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Business\obj\Debug\net6.0\refint\DevOC.Business.dll
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Business\obj\Debug\net6.0\DevOC.Business.pdb
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Business\obj\Debug\net6.0\ref\DevOC.Business.dll
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Business\bin\Debug\net6.0\DevOC.Business.runtimeconfig.json
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Business\obj\Debug\net6.0\DevOC.Business.genruntimeconfig.cache

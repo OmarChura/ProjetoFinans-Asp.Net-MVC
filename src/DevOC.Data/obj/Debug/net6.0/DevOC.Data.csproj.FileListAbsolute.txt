@@ -1,0 +1,17 @@
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Data\bin\Debug\net6.0\DevOC.Data.deps.json
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Data\bin\Debug\net6.0\DevOC.Data.dll
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Data\bin\Debug\net6.0\DevOC.Data.pdb
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Data\bin\Debug\net6.0\DevOC.Business.dll
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Data\bin\Debug\net6.0\DevOC.Business.pdb
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Data\obj\Debug\net6.0\DevOC.Data.csproj.AssemblyReference.cache
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Data\obj\Debug\net6.0\DevOC.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Data\obj\Debug\net6.0\DevOC.Data.AssemblyInfoInputs.cache
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Data\obj\Debug\net6.0\DevOC.Data.AssemblyInfo.cs
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Data\obj\Debug\net6.0\DevOC.Data.csproj.CoreCompileInputs.cache
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Data\obj\Debug\net6.0\DevOC.Data.csproj.CopyComplete
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Data\obj\Debug\net6.0\DevOC.Data.dll
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Data\obj\Debug\net6.0\refint\DevOC.Data.dll
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Data\obj\Debug\net6.0\DevOC.Data.pdb
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Data\obj\Debug\net6.0\ref\DevOC.Data.dll
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Data\bin\Debug\net6.0\DevOC.Data.runtimeconfig.json
+C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.Data\obj\Debug\net6.0\DevOC.Data.genruntimeconfig.cache

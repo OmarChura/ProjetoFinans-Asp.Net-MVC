@@ -1,0 +1,80 @@
+﻿<!--jquery datatable https://datatables.net/ , site para paginação-->
+@model DevOC.App.ViewModels.UsuarioViewModel
+@{
+    ViewData["Title"] = "Detalhes do Usúario - " + Model.Nome;
+}
+
+<!-- inicio seção home -->
+<section class="section-topo pt-4">
+    <div class="container">
+        <div class="section-topo-left ">
+            <h1 class="display-4">Detalhe despessa</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque hendrerit lacus sit amet aliquet. Cras non venenatis purus.
+            </p>
+            <div class="cadastrar-consultar">
+            </div>
+
+        </div>
+
+        <div class="capa-mulher">
+            <img src="imagens/capa-mulher.png" alt="" srcset="">
+        </div>
+        <div class="clear"></div>
+    </div>
+</section>
+<!-- fim seção home -->
+
+<div class="container">
+    <div class="col-md-6">
+        <dl>
+            <dt>
+                @Html.DisplayNameFor(model => model.Nome)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Nome)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Login)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Login)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Celular)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Celular)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Perfil)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Perfil)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.DateCadastro)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.DateCadastro)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.DataAtualizacao)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.DataAtualizacao)
+            </dd>
+            </dd>
+        </dl>
+        <div>
+            <a class="btn btn-dark" asp-action="Edit" asp-route-id="@Model?.Id">Editar</a>
+            <a class="btn btn-info" href="javascript:window.history.back();">Voltar</a>
+        </div>
+    </div>
+</div>

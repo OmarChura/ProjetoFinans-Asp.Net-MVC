@@ -1,0 +1,55 @@
+﻿<!--jquery datatable https://datatables.net/ , site para paginação-->
+@model IEnumerable<DevOC.App.ViewModels.OrcamentoPessoalViewModel>
+@{
+    ViewData["Title"] = "Listagem de Despessas";
+}
+
+<!-- inicio seção home -->
+<section class="section-topo pt-4">
+    <div class="container">
+        <div class="section-topo-left ">
+            <h1 class="display-4">Registro de nova despesa</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque hendrerit lacus sit amet aliquet. Cras non venenatis purus.
+            </p>
+
+            <div class="cadastrar-consultar">
+                <button><a asp-action="Create">Cadastro</a></button>
+                <button><a asp-action="Index">Consulta</a></button>
+            </div>
+        </div>
+
+        <div class="capa-mulher">
+            <img src="imagens/capa-mulher.png" alt="" srcset="">
+        </div>
+        <div class="clear"></div>
+    </div>
+</section>
+<!-- fim seção home -->
+
+<div class="text-center container">
+    
+
+    @if (TempData["MensagemSucesso"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            <button type="button" class="btn btn-danger btn-sm close-alert" arial-labe="Close">x</button>
+            @TempData["MensagemSucesso"]
+        </div>
+    }
+
+    @if (TempData["MensagemErro"] != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            <button type="button" class="btn btn-danger btn-sm close-alert" arial-labe="Close">x</button>
+            @TempData["MensagemErro"]
+        </div>
+    }
+
+    <br />
+
+    <h1 class="display-4">Listagem de Despesas</h1>
+
+    <partial name="_ListaOrcamento">
+    
+</div>

@@ -1,0 +1,87 @@
+﻿<!--jquery datatable https://datatables.net/ , site para paginação-->
+
+@{
+    ViewData["Title"] = "Contatos";
+}
+
+<!-- inicio seção home -->
+<section class="section-topo pt-4">
+    <div class="container">
+        <div class="section-topo-left ">
+            <h1 class="display-4">Entre em contato</h1>
+            <h2>
+                <strong>THORNE</strong>
+                <br>
+                777 BROADWAY AVE.
+                <br>
+                NEW YORK, NY 00000-000
+            </h2>
+            <p>
+                Telefone: +55 (17)3333-3333
+                <br>
+                Celular: +55 (17)95555-5555
+                <i class="fab fa-whatsapp"></i>
+                <br>
+                Email:
+                <a href="">abcdefg@gmail.com</a>
+                <br>
+                <br>
+                Usado por mais de 1 milhão de pessoas, o finans é uma ferramenta online que vai facilitar a sua vida
+            </p>
+
+            <div class="disponivel-icones">
+                <p>
+                    Disponivel para
+                    <a href="https://www.android.com/intl/pt-BR_br/">
+                        <button><i class="fab fa-android"></i></button>
+                    </a>
+                    <a href="https://www.apple.com/br/">
+                        <button><i class="fab fa-apple"></i></button>
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="capa-mulher">
+            <img src="imagens/capa-mulher.png" alt="" srcset="">
+        </div>
+        <div class="clear"></div>
+    </div>
+</section>
+<!-- fim seção home -->
+
+
+<!-- inicio seção contato -->
+<section class="caixa">
+    <div class="container">
+        <div class="area-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14915.615981858711!2d-49.3983991!3d-20.8355829!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x10c83b87a725573c!2sRiopreto%20Shopping%20Center!5e0!3m2!1spt-BR!2sbr!4v1586309039007!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="area-mensagem">
+            <form action="">
+                <label for="primeiro_nome">Nome</label>
+                <br>
+                <input type="text" name="primeiro_nome" id="primeiro_nome" placeholder="Pimeiro Nome" required>
+                <input type="text" name="primeiro_nome" id="primeiro_nome" placeholder="Ultimo Nome" required>
+
+                <br>
+                <label for="email">E-mail</label>
+                <br>
+                <input type="email" name="emial" id="email" placeholder="gmail.com" required>
+
+                <br>
+                <label for="mensagem">Mensagem</label>
+                <br>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="5" required></textarea>
+
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+</section>
+<!-- fim seção contato -->
+
+   

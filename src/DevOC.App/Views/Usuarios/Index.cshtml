@@ -1,0 +1,105 @@
+﻿<!--jquery datatable https://datatables.net/ , site para paginação-->
+@using DevOC.App.Extensions
+@model IEnumerable<DevOC.App.ViewModels.UsuarioViewModel>
+
+@{
+    ViewData["Title"] = "Listagem de Usuarios";
+}
+
+<!-- inicio seção home -->
+<section class="section-topo pt-4">
+    <div class="container">
+        <div class="section-topo-left ">
+            <h1 class="display-4">Registro de novo usúario</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque hendrerit lacus sit amet aliquet. Cras non venenatis purus.
+            </p>
+
+            <div class="cadastrar-consultar">
+                <button><a asp-action="Create" >Cadastro</a></button>
+                <button><a asp-action="Index">Consulta</a></button>
+            </div>
+        </div>
+
+        <div class="capa-mulher">
+            <img src="imagens/capa-mulher.png" alt="" srcset="">
+        </div>
+        <div class="clear"></div>
+    </div>
+</section>
+<!-- fim seção home -->
+
+<div class="text-center container">
+    
+    <br />
+
+    <h1 class="display-4">@ViewData["Title"]</h1>
+
+
+    <table class="table" id="table-usuarios">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Login</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Perfil</th>
+                <th scope="col">Total de Contatos</th>
+                <th scope="col">Data de Cadastro</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if(Model != null && Model.Any())
+            {
+                foreach (UsuarioViewModel usuario in Model)
+                {
+                    <tr>
+                        <th scope="row">@usuario.Id</th>
+                        <td>@usuario.Nome</td>
+                        <td>@usuario.Login</td>
+                        <td>@usuario.Email</td>
+                        <td>@Html.DisplayFor(modelUsuario => usuario.Perfil)</td>
+                        <td>
+                            <a href="javascript:" usuario-id="@usuario.Id" class="btn btn-success btn-sm btn-total-contatos">
+                                @(usuario.Orcamentos != null && usuario.Orcamentos.Any() ? usuario.Orcamentos.Count() : 0)
+                            </a>
+                        </td>
+                        <td>@usuario.DateCadastro</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a class="btn btn-info" asp-action="Details" asp-route-id="@usuario.Id"><spam class="fa fa-search"></spam></a>
+                                <a class="btn btn-warning"  asp-action="Edit" asp-route-id="@usuario.Id"><spam class="fa fa-pencil-alt"></spam></a> 
+                                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@usuario.Id"><spam class="fa fa-trash"></spam></a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr class="add">
+                    <td valign="top" colspan="5">Nenhum Usúario Encontrado</td>
+                </tr>
+            }
+            
+        </tbody>
+    </table>
+
+
+    <div id="modalContatosUsuario" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Listagem de Despesas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"hi>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="listaContatosUsuario"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

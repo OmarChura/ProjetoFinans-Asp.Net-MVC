@@ -1,0 +1,132 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DevOC.App
+build_property.RootNamespace = DevOC.App
+build_property.ProjectDir = C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.App\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\henry\Desktop\ProjetoFinans-Asp.Net\ProjetoFinans\src\DevOC.App
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/AlterarSenha/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx0ZXJhclNlbmhhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/Contato/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF0b1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/OrcamentoPessoal/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JjYW1lbnRvUGVzc29hbFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/OrcamentoPessoal/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JjYW1lbnRvUGVzc29hbFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/OrcamentoPessoal/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JjYW1lbnRvUGVzc29hbFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/OrcamentoPessoal/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JjYW1lbnRvUGVzc29hbFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/OrcamentoPessoal/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JjYW1lbnRvUGVzc29hbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/OrcamentoPessoal/_ListaOrcamento.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JjYW1lbnRvUGVzc29hbFxfTGlzdGFPcmNhbWVudG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/Restrito/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdHJpdG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/Shared/Components/Menu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVudVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/Shared/Components/Summary/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU3VtbWFyeVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/Shared/_LayoutDeslogado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXREZXNsb2dhZG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/Usuarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/Usuarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/Usuarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/Usuarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/Usuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/Usuarios/_AtualizarEndereco.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcX0F0dWFsaXphckVuZGVyZWNvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/Usuarios/_DetalhesEndereco.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcX0RldGFsaGVzRW5kZXJlY28uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/Usuarios/_Endereco.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcX0VuZGVyZWNvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/Usuarios/_OrcamentosUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcX09yY2FtZW50b3NVc3VhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henry/Desktop/ProjetoFinans-Asp.Net/ProjetoFinans/src/DevOC.App/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-pm8mt103q4

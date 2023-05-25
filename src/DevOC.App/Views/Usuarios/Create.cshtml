@@ -1,0 +1,92 @@
+﻿@model DevOC.App.ViewModels.UsuarioViewModel
+
+
+@{
+    ViewData["Title"] = "Novo Usúario";
+}
+
+<!-- inicio seção home -->
+<section class="section-topo pt-4">
+    <div class="container">
+        <div class="section-topo-left ">
+            <h1 class="display-4">Registro de novo Usúarioa</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque hendrerit lacus sit amet aliquet. Cras non venenatis purus.
+            </p>
+
+            <div class="cadastrar-consultar">
+                <button><a asp-controller="Usuarios" asp-action="Create">Cadastro</a></button>
+                <button><a asp-controller="Usuarios" asp-action="Index">Consulta</a></button>
+            </div>
+        </div>
+
+        <div class="capa-mulher">
+            <img src="/imagens/capa-mulher.png" alt="" srcset="">
+        </div>
+        <div class="clear"></div>
+    </div>
+</section>
+<!-- fim seção home -->
+
+<!-- inicio seção formulario cadastrar -->
+<section class="caixa">
+    <div class="container">
+        <div class="col-md-4">
+            <form  asp-action="Create" method="post">
+
+                <vc:summary></vc:summary>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Nome" class="control-label"></label>
+                    <input asp-for="Nome" class="form-control" type="text" placeholder="Digite o nome do usúario" />
+                    <span asp-validation-for="Nome" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Login" class="control-label"></label>
+                    <input asp-for="Login" type="text" class="form-control" />
+                    <span asp-validation-for="Login" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Senha" class="control-label"></label>
+                    <input asp-for="Senha" type="password" class="form-control" />
+                    <span asp-validation-for="Senha" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" type="text" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Celular" class="control-label"></label>
+                    <input asp-for="Celular" type="text" class="form-control" />
+                    <span asp-validation-for="Celular" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Perfil" class="control-label"></label> <br />
+                    <input type="radio" value="1" asp-for="Perfil" checked /> Administrador <br />
+                    <input type="radio" value="2" asp-for="Perfil" /> Padrão <br />
+                </div>
+            
+
+                <h4 class="display-4">Endereço</h4>
+                <hr />
+                <partial name="_Endereco" />
+
+                <div class="form-group">
+                    <input type="submit" value="Cadastrar" class="btn btn-primary" />
+                    <a class="btn btn-info" asp-action="Index">Voltar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- fim seção formulario cadastrar -->
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        BuscaCep()
+    </script>
+}

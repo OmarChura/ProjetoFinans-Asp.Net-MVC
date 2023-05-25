@@ -1,0 +1,97 @@
+﻿<!--jquery datatable https://datatables.net/ , site para paginação-->
+@model DevOC.App.ViewModels.OrcamentoPessoalViewModel
+@{
+    ViewData["Title"] = "Detalhes de Despessa - " + Model.TipoDespesa;
+}
+
+<!-- inicio seção home -->
+<section class="section-topo pt-4">
+    <div class="container">
+        <div class="section-topo-left ">
+            <h1 class="display-4">Detalhe despessa</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque hendrerit lacus sit amet aliquet. Cras non venenatis purus.
+            </p>
+            <div class="cadastrar-consultar">
+            </div>
+            
+        </div>
+
+        <div class="capa-mulher">
+            <img src="imagens/capa-mulher.png" alt="" srcset="">
+        </div>
+        <div class="clear"></div>
+    </div>
+</section>
+<!-- fim seção home -->
+
+<div class="container">
+    <div class="col-md-6">
+        <dl>
+            <dt>
+                @Html.DisplayNameFor(model => model.UsuarioId)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Usuario.Nome)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Dia)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Dia)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Mes)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Mes)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Ano)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Ano)
+            <dt>
+                    @Html.DisplayNameFor(model => model.TipoDespesa)
+            </dt>
+            <dd>
+                    @Html.DisplayFor(model => model.TipoDespesa)
+            </dd>
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Descricao)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Descricao)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Valor)
+            </dt>
+            <dd>
+                @Model.Valor.ToString("C")
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.DataCadastro)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.DataCadastro)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.DataAtualizacao)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.DataAtualizacao)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Ativo)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Ativo)
+            </dd>
+        </dl>
+        <div>
+            <a class="btn btn-dark" asp-action="Edit" asp-route-id="@Model?.Id">Editar</a>
+            <a class="btn btn-info" href="javascript:window.history.back();">Voltar</a>
+        </div>
+    </div>
+</div>

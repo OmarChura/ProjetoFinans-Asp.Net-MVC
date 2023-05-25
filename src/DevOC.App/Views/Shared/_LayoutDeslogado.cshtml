@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DevOC.App</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/DevOC.App.styles.css" asp-append-version="true" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+<body>
+    <header class="">
+        <nav class="navbar navbar-expand-md fixed-top mt-0 navegacao-fixo">
+            <div class="container-fluid">
+                <!-- Menu Hamburguer -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-dark"></span>
+                </button>
+            </div>
+        </nav>
+        <div class="clear"></div>
+    </header>
+    <section>
+        <div class="">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </section>
+
+
+
+
+    <footer class="container">
+        <div class="navegacao-footer">
+            &copy; 2023 - DevOC.App - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <br />
+            <div class="navegacao-footer">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contatos.html">Contatos</a></li>
+                </ul>
+            </div>
+
+            <div class="navegacao-icones">
+                <ul>
+                    <li><a href="https://www.facebook.com/"><button><i class="fab fa-facebook"></i></button></a></li>
+                    <li><a href="https://twitter.com/"><button><i class="fab fa-twitter"></i></button></a></li>
+                    <li><a href="https://www.instagram.com/"><button><i class="fab fa-instagram"></i></button></a></li>
+                    <li><a href="https://www.youtube.com/"><button><i class="fab fa-youtube"></i></button></a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

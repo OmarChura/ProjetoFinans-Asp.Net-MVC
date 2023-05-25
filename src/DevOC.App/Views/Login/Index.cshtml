@@ -1,0 +1,70 @@
+﻿@model LoginViewModel
+@{
+    Layout = "_LayoutDeslogado";
+    ViewData["Title"] = "login";
+}
+
+
+
+<!-- inicio seção home -->
+<section class="section-topo pt-4">
+    <div class="container">
+        <div class="section-topo-left ">
+            <h1 class="display-4">Suas contas descomplicadas</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque hendrerit lacus sit amet aliquet. Cras non venenatis purus.
+            </p>
+
+            <div class="disponivel-icones">
+                <p>
+                    Disponivel para
+                    <a href="https://www.android.com/intl/pt-BR_br/">
+                        <button><i class="fab fa-android"></i></button>
+                    </a>
+                    <a href="https://www.apple.com/br/">
+                        <button><i class="fab fa-apple"></i></button>
+                    </a>
+                </p>
+            </div>
+
+            <div class="cadastrar-consultar">
+            </div>
+        </div>
+
+        <div class="capa-mulher">
+            <img src="imagens/capa-mulher.png" alt="" srcset="">
+        </div>
+        <div class="clear"></div>
+    </div>
+</section>
+<!-- fim seção home -->
+
+<section class="caixa">
+    <div class="container-fluid">
+        <div class="container-entrar">
+            <img src="~/imagens/perfil.png" alt="" />
+            <h3>LOGIN</h3>
+
+            <form asp-controller="Login" asp-action="Entrar" method="post">
+                <div class="mb-3">
+                    <label for="Login" class="form-label">Login</label>
+                    <input type="text" asp-for="Login" class="form-control" id="login">
+                    @Html.ValidationMessageFor(x => x.Login)
+                </div>
+                <div class="mb-3">
+                    <label for="Senha" class="form-label">Senha</label>
+                    <input type="password" asp-for="Senha" class="form-control" id="senha">
+                    @Html.ValidationMessageFor(x => x.Senha)
+                </div>
+
+                <p class="mb-4 text-sm mx-auto">
+                    Esqueceu sua senha?
+                    <a asp-action="RedefinirSenha" asp-controller="Login" class="text-white text-capitalize ">Refinir minha senha</a>
+                </p>
+
+                <button type="submit" class="btn btn-primary">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+</section>
